@@ -1,0 +1,17 @@
+---
+language: python
+python:
+  - "3.6"
+
+# Install python packages for ansible and linters.
+install:
+  - "pip install -r requirements.txt"
+
+# Execute linting and unit tests before running the main playbook.
+before_script:
+  - "cd roles/iac/tests"
+  - "make lint"
+
+# Perform playbook testing with mock CI inputs.
+script:
+  - "make run"
