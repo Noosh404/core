@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nickrusso42518/core.svg?branch=master)](https://travis-ci.org/nickrusso42518/core)
+
 # PM TN Config Manager core
 Contains universal logic for building specific platforms and is
 represented in an Ansible role. A basic playbook is consumable as well,
