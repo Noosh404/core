@@ -1,0 +1,7 @@
+---
+all:
+  children:
+    asa:
+      hosts:
+        localhost_asa:
+          ansible_network_os: mock

@@ -1,0 +1,5 @@
+---
+- name: "Mock template to test mechanics"
+  template:
+    src: "{{ ansible_network_os }}/{{ inventory_hostname }}.j2"
+    dest: "{{ playbook_dir }}/{{ inventory_hostname }}.txt"

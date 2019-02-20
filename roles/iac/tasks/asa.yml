@@ -1,0 +1,7 @@
+---
+- name: "Apply ASA config differences"
+  asa_config:
+    src: "{{ ansible_network_os }}/{{ inventory_hostname }}.j2"
+    save: true
+  notify: config_changed
+  register: config_result

@@ -1,0 +1,7 @@
+---
+- name: "Apply IOS config differences"
+  ios_config:
+    src: "{{ ansible_network_os }}/{{ inventory_hostname }}.j2"
+    save_when: changed
+  notify: config_changed
+  register: config_result

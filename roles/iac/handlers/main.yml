@@ -1,0 +1,6 @@
+---
+- name: "Print config updates"
+  listen: config_changed
+  debug:
+    msg: "{{ config_result.updates }}"
+  when: "config_result.updates is defined"

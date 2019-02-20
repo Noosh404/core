@@ -1,0 +1,16 @@
+---
+interfaces:
+  - name: Loopback0
+    desc: hello
+    ip_addr: 10.1.1.1
+    ip_mask: 255.255.255.255
+  - name: GigabitEthernet1.58
+    desc: VOICE VLAN
+    vlan: 58
+    ip_addr: 10.1.58.1
+    ip_mask: 255.255.255.240
+  - name: GigabitEthernet1.59
+    desc: DATA VLAN
+    vlan: 59
+    ip_addr: 10.1.59.1
+    ip_mask: 255.255.255.224

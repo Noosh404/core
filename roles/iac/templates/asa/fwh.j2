@@ -1,0 +1,8 @@
+{% for a in acls %}
+{% for r in a.rules %}
+access-list {{ a.name }} extended {{ r.action }} {{ r.src_ip }} {{ r.dst_ip }} log
+{% endfor %}
+{% endfor %}
+{% for s in ntp_servers %}
+ntp server {{ s }}
+{% endfor %}

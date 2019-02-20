@@ -1,0 +1,7 @@
+---
+all:
+  children:
+    ios:
+      hosts:
+        localhost_ios:
+          ansible_network_os: mock

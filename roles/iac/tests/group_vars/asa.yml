@@ -1,0 +1,13 @@
+---
+acls:
+  - name: ACL_IN
+    rules:
+      - action: permit
+        src_ip: host 192.168.10.1
+        dst_ip: host 172.16.10.1
+      - action: permit
+        src_ip: host 192.168.11.1
+        dst_ip: host 172.16.11.1
+      - action: deny
+        src_ip: any
+        dst_ip: any

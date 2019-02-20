@@ -1,0 +1,5 @@
+---
+- name: "Regression test"
+  hosts: all
+  roles:
+    - "iac"

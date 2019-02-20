@@ -1,0 +1,5 @@
+---
+- name: "Update infrastructure configuration"
+  hosts: all
+  roles:
+    - "iac"

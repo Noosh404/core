@@ -1,0 +1,11 @@
+{% for i in interfaces %}
+interface {{ i.name }}
+ description {{ i.desc }}
+{% if i.vlan is defined %}
+ encapsulation dot1Q {{ i.vlan }}
+{% endif %}
+ ip address {{ i.ip_addr }} {{ i.ip_mask }}
+{% endfor %}
+{% for s in ntp_servers %}
+ntp server {{ s }}
+{% endfor %}
