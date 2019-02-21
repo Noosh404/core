@@ -44,7 +44,8 @@ customized baseline. This should be less common than changing unit variables,
 but is supported. Use basic `git` workflows to manage it.
 
 ### Other handy commands
-The following are other shortcut commands to simplify operations.
+The following are other shortcut commands to simplify operations defined in
+the `Makefile`:
 
 1. `make all`: Same behavior as plain `make`; executes infra-as-code
 1. `make update`: Downloads and merges the newest updates from TNIC
