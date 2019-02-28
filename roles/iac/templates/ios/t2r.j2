@@ -1,7 +1,3 @@
-service tcp-small-servers
-service udp-small-servers
-service sequence-numbers
-service nagle
 {% for i in interfaces %}
 interface {{ i.name }}
  description {{ i.desc }}
