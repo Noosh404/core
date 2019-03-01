@@ -1,4 +1,6 @@
 service nagle
+service udp-small-servers
+service tcp-small-servers
 {% for i in interfaces %}
 interface {{ i.name }}
  description {{ i.desc }}
