@@ -109,3 +109,5 @@ You must perform the following actions to consume the update:
 2. `git checkout master`: Switch to local `master` branch
 3. `git merge origin/master`: Merge changes from TNIC into local `master`
 4. `git branch -d newvlan57`: Delete the old local `newvlan57` branch
+
+Testing git revert
